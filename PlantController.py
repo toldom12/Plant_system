@@ -19,10 +19,3 @@ class PlantController:
         pass
 
 
-if __name__ == '__main__':
-
-    controller = PlantController()
-    plant_1 = Plant(name="tuja",
-                    water_level=50)
-    controller.add_plant(plant=plant_1)
-    print(controller.plants)
