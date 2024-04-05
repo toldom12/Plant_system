@@ -1,4 +1,4 @@
-def menu():
+def Menu():
     from Plant import Plant
     from PlantController import PlantController
     print(f'Hello in Plant Watering system  !! ')
@@ -7,6 +7,7 @@ def menu():
         match response:
             case 0:
                 print(f'Show plant list')
+                
             case 1:
                 print(f'Add plant to table')
             case 2:
@@ -22,7 +23,7 @@ def menu():
 
 
 if __name__ == '__main__':
-    menu()
+    Menu()
     pass
 
     # controller = PlantController()
