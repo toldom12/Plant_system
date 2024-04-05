@@ -18,7 +18,6 @@ def Menu():
                 if isinstance(name_of_plant, str):
                     plant.add_plant(plant=new_plant)
                     pass
-
             case 2:
                 print(f'Write expected  level of water plant in [mm]')
             case 3:
@@ -34,3 +33,4 @@ def Menu():
 if __name__ == '__main__':
     Menu()
     pass
+
