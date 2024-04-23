@@ -12,6 +12,7 @@ def Menu():
                 print(f'Add plant to table')
             case 2:
                 print(f'Write expected  level of water plant in [mm]')
+                pass 
             case 3:
                 print(f'Check plant humidity')
             case 4:
