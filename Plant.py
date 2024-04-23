@@ -1,6 +1,4 @@
 class Plant:
-    name: str
-    water_level: float
 
     def __init__(self,
                  name: str,
@@ -15,4 +13,5 @@ class Plant:
                     amount_water_mm: float):
         pass
 
-
+    def base_info_plant(self) -> tuple[str, float]:
+        return self.name, self.water_level
