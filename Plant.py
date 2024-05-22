@@ -9,8 +9,7 @@ class Plant:
     def check_moisture_level(self) -> str:
         pass
 
-    def water_plant(self,
-                    amount_water_mm: float):
+    def water_plant(self, amount_water_mm: float):
         pass
 
     def base_info_plant(self) -> tuple[str, float]:

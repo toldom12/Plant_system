@@ -13,7 +13,8 @@ def Menu():
                 info_about_water_lvl: float = float(input(f' info about water lvl of plant: {plant_name}'))
                 new_plant = Plant(name=plant_name,
                                   water_level=info_about_water_lvl)
-                name_of_plant, info_lvl_water = new_plant.base_info_plant()
+                name_of_plant = new_plant.name
+                water_level = new_plant.water_level
                 plant = PlantController()
                 if isinstance(name_of_plant, str):
                     plant.add_plant(plant=new_plant)
