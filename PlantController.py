@@ -27,10 +27,13 @@ class PlantController:
     def read_names_of_plants_with_file_txt(self):
         with open(self.path, mode='r') as self.file:
             lines = self.file.readlines()
+            print(f'-----------------')
+            print(f'list of plants : ')
             for index, row in enumerate(lines):
                 row = row.split()
                 expected_name = row[1].replace(',', '')
                 print(index, expected_name)
+            print(f'-----------------')
 
     def read_plant_info_with_file_txt(self, index: int = 0):
         name = input(str(f'Write name of plant'))
@@ -75,6 +78,6 @@ class PlantController:
         pass
 
 
-a = PlantController()
-a.read_names_of_plants_with_file_txt()
-pass
+# a = PlantController()
+# a.read_names_of_plants_with_file_txt()
+# pass
